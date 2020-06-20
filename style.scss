@@ -85,7 +85,7 @@ p {
     }
 }
 
-.members-title {
+.section-title {
     margin-top: ($base-spacing * 4);
 }
 
@@ -120,4 +120,8 @@ a {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+}
+
+.ctfs {
+    list-style: none;
 }

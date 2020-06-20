@@ -9,6 +9,7 @@
         <title>solid-umbrella</title>
         <meta name="description" content="{{site.description}}">
         <link rel="stylesheet" href="/style.css?v={{site.version}}">
+        <link rel="shortcut icon" href="/favicon.ico">
         <script src="https://kit.fontawesome.com/73bf1ec75c.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -18,10 +19,10 @@
                     <img class="hero-logo" alt="An umbrella anchored in some solid bricks" src="logo.png" />
                     <h1>solid-umbrella</h1>
                     <p class="lead">A CTF team at the Bergen County Academies</p>
-                    <p class="links"><a href="{{site.ctftime}}">CTFTime <i class="far fa-arrow-right"></i></a> <em style="opacity: 0.5;">wiki coming soon!</em></p>
+                    <p class="links"><a href="{{site.github}}">GitHub <i class="far fa-arrow-right"></i></a> <a href="{{site.ctftime}}">CTFTime <i class="far fa-arrow-right"></i></a> <em style="opacity: 0.5;">wiki coming soon!</em></p>
                     <p>What happens when you leave the team name up to GitHub's amazing repository name suggestions? Why, you get <strong>solid-umbrella</strong>, of course!</p>
                     <p>A group of high school friends mucking about, and also occasionally learning more stuff about how computers work (and how to hack them).</p>
-                    <h5 class="members-title">Who we are</h5>
+                    <h5 class="section-title">Who we are</h5>
                     <div class="members">
                         {% for member in site.data.members %}
                         <div class="member">
@@ -30,6 +31,12 @@
                         </div>
                         {% endfor %}
                     </div>
+                    <h5 class="section-title">CTFs we've done</h5>
+                    <ul class="ctfs">
+                        {% for ctf in site.data.ctfs %}
+                        <li><a href="{{ctf.url}}" target="_blank">{{ctf.name}} <i class="far fa-external-link"></i></a></li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>

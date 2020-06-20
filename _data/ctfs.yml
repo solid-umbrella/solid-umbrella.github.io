@@ -1,0 +1,10 @@
+- name: picoCTF 2019
+  url: https://picoctf.com
+- name: PlaidCTF 2020
+  url: https://play.plaidctf.com
+- name: DEF CON CTF 2020 Quals
+  url: https://oooverflow.io/dc-ctf-2020-quals/
+- name: TJCTF 2020
+  url: https://tjctf.org
+- name: HSCTF 7
+  url: https://hsctf.com
