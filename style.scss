@@ -10,6 +10,10 @@ $h1-font-size: 3 * $base-font-size;
 $h5-font-size: 1.5 * $base-font-size;
 $lead-font-size: 1.5 * $base-font-size;
 
+$link-color: #63b6ff;
+$link-hover-fallback-color: #00ff00;
+$link-hover-gradient: linear-gradient(135deg, $link-hover-fallback-color, #00aa00);
+
 $base-spacing: 16px;
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
@@ -54,7 +58,7 @@ p {
 }
 
 #main {
-    margin: ($base-spacing * 4) 0;
+    margin: ($base-spacing * 2) 0;
 }
 
 .container {
@@ -69,8 +73,20 @@ p {
     width: 100%;
 }
 
+.links {
+    margin-bottom: ($base-spacing * 2);
+
+    a {
+        margin-right: $base-spacing;
+    }
+
+    a:last-child {
+        margin-right: 0;
+    }
+}
+
 .members-title {
-    margin-top: ($base-spacing * 5);
+    margin-top: ($base-spacing * 4);
 }
 
 .members {
@@ -84,4 +100,24 @@ p {
 .member {
     width: 240px;
     padding: $base-spacing $base-spacing;
+}
+
+.hero-logo {
+    max-width: 100%;
+    width: 360px;
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        color: $link-hover-fallback-color;
+        background-image: $link-hover-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
