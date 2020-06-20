@@ -26,8 +26,29 @@
                     <div class="members">
                         {% for member in site.data.members %}
                         <div class="member">
+                            <img alt="GitHub avatar for {{member.github}}" src="https://avatars.githubusercontent.com/{{member.github}}?size=240" class="member-avatar" />
                             <h4>{{member.name}}</h4>
                             <p>{{member.github}}</p>
+
+                            {% if member.web %}
+                            <a href="{{member.web}}" target="_blank"><span class="sr-only">Website</span><i class="far fa-globe"></i></a>
+                            {% endif %}
+
+                            {% if member.email %}
+                            <a href="mailto:{{member.email}}" target="_blank"><span class="sr-only">Email</span><i class="far fa-envelope"></i></a>
+                            {% endif %}
+
+                            {% if member.github %}
+                            <a href="https://github.com/{{member.github}}" target="_blank"><span class="sr-only">GitHub</span><i class="fab fa-github"></i></a>
+                            {% endif %}
+
+                            {% if member.twitter %}
+                            <a href="https://twitter.com/{{member.twitter}}" target="_blank"><span class="sr-only">Twitter</span><i class="fab fa-twitter"></i></a>
+                            {% endif %}
+
+                            {% if member.linkedin %}
+                            <a href="{{member.linkedin}}" target="_blank"><span class="sr-only">LinkedIn</span><i class="fab fa-linkedin"></i></a>
+                            {% endif %}
                         </div>
                         {% endfor %}
                     </div>
