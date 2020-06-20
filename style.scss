@@ -1,0 +1,87 @@
+---
+---
+
+$background-color: black;
+$foreground-color: white;
+
+$font: 'Fira Code', Menlo, monospace;
+$base-font-size: 15px;
+$h1-font-size: 3 * $base-font-size;
+$h5-font-size: 1.5 * $base-font-size;
+$lead-font-size: 1.5 * $base-font-size;
+
+$base-spacing: 16px;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: $background-color;
+    color: $foreground-color;
+    width: 100%;
+}
+
+body {
+    font-family: $font;
+    font-size: $base-font-size;
+}
+
+input, button {
+    font-family: inherit;
+}
+
+h1 {
+    font-size: $h1-font-size;
+    margin-bottom: $base-spacing;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+.lead {
+    font-size: $lead-font-size;
+    margin-bottom: $base-spacing;
+}
+
+p {
+    margin-bottom: $base-spacing / 2;
+}
+
+#main {
+    margin: ($base-spacing * 4) 0;
+}
+
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 ($base-spacing * 2);
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+.members-title {
+    margin-top: ($base-spacing * 5);
+}
+
+.members {
+    margin-top: $base-spacing;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.member {
+    width: 240px;
+    padding: $base-spacing $base-spacing;
+}

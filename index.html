@@ -1,29 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Solid Umbrella</title>
-<style type="text/css">
-body {
-margin: 40px auto;
-max-width: 650px;
-line-height: 1.6;
-font-size: 18px;
-color: #444;
-padding:0 10px
-}
+---
+---
 
-h1,h2,h3 {
-line-height: 1.2
-}
-</style>
-</head>
-<body>
-<h1>Ah yes.</h1>
-<p>What a beautiful website.</p>
-<p>Maybe something will go here someday.</p>
-<br><br><br><br><br><br>
-<a href="https://ctftime.org/team/91197">CTFTime</a>
-</body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>solid-umbrella</title>
+        <meta name="description" content="{{site.description}}">
+        <link rel="stylesheet" href="/style.css?v={{site.version}}">
+    </head>
+    <body>
+        <div id="main">
+            <div class="container">
+                <div class="center">
+                    <h1>solid-umbrella</h1>
+                    <p class="lead">A CTF team at the Bergen County Academies</p>
+                    <p>What happens when you leave the team name up to GitHub's amazing repository name suggestions? Why, you get <strong>solid-umbrella</strong>, of course!</p>
+                    <p>A group of high school friends mucking about, and also occasionally learning more stuff about how computers work (and how to hack them).</p>
+                    <h3 class="members-title">Who we are</h3>
+                    <div class="members">
+                        {% for member in site.data.members %}
+                        <div class="member">
+                            <h4>{{member.name}}</h4>
+                            <p>{{member.github}}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
