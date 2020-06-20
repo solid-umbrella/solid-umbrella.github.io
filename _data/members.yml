@@ -1,6 +1,15 @@
 - name: Edward Feng
   github: edwfeng
   email: ed@ewf.me
+- name: Erez Israeli Miller
+  github: eiis1000
+  email: erez@ezkz.show
+- name: Anthony Li
+  github: anli5005
+  twitter: anli5005
+  web: https://anli.dev
+  email: me@anli.dev
+  linkedin: https://www.linkedin.com/in/anli5005
 - name: Aidan Glickman
   github: AidanGlickman
   web: https://aidanglickman.com
@@ -14,14 +23,5 @@
   email: michael@ezkz.show
 - name: Jeremy Kurian
   github: jerkur22
-- name: Erez Israeli Miller
-  github: eiis1000
-  email: erez@ezkz.show
-- name: Anthony Li
-  github: anli5005
-  twitter: anli5005
-  web: https://anli.dev
-  email: me@anli.dev
-  linkedin: https://www.linkedin.com/in/anli5005
 - name: Autumn Shin
   github: autumnshin
