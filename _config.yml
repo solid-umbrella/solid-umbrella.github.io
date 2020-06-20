@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   A group of high school friends mucking about, and also occasionally learning more stuff about how computers work (and how to hack them).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-version: 1
+version: 2
 github: https://github.com/solid-umbrella
 ctftime: https://ctftime.org/team/91197
 
