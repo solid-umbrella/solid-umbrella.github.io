@@ -53,9 +53,17 @@
                             {% if member.twitter %}
                             <a href="https://twitter.com/{{member.twitter}}" target="_blank"><span class="sr-only">Twitter</span><i class="fab fa-twitter"></i></a>
                             {% endif %}
+                            
+                            {% if member.reddit %}
+                            <a href="https://reddit.com/{{member.reddit}}" target="_blank"><span class="sr-only">Reddit</span><i class="fab fa-reddit"></i></a>
+                            {% endif %}
 
                             {% if member.linkedin %}
                             <a href="{{member.linkedin}}" target="_blank"><span class="sr-only">LinkedIn</span><i class="fab fa-linkedin"></i></a>
+                            {% endif %}
+                            
+                            {% if member.medium %}
+                            <a href="https://medium.com/@{{member.medium}}" target="_blank"><span class="sr-only">Medium</span><i class="fab fa-medium"></i></a>
                             {% endif %}
                         </div>
                         {% endfor %}
