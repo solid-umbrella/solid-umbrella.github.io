@@ -27,6 +27,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 version: 2
 github: https://github.com/solid-umbrella
 ctftime: https://ctftime.org/team/91197
+wiki: https://wiki.solidumbrella.team
 
 # Build settings
 
