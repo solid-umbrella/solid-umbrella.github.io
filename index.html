@@ -54,6 +54,10 @@
                             <a href="https://twitter.com/{{member.twitter}}" target="_blank"><span class="sr-only">Twitter</span><i class="fab fa-twitter"></i></a>
                             {% endif %}
                             
+                            {% if member.youtube %}
+                            <a href="{{member.youtube}}" target="_blank"><span class="sr-only">YouTube</span><i class="fab fa-youtube"></i></a>
+                            {% endif %}
+                            
                             {% if member.reddit %}
                             <a href="https://reddit.com/{{member.reddit}}" target="_blank"><span class="sr-only">Reddit</span><i class="fab fa-reddit"></i></a>
                             {% endif %}
