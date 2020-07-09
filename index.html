@@ -57,6 +57,10 @@
                             {% if member.reddit %}
                             <a href="https://reddit.com/{{member.reddit}}" target="_blank"><span class="sr-only">Reddit</span><i class="fab fa-reddit"></i></a>
                             {% endif %}
+                            
+                            {% if member.tiktok %}
+                            <a href="{{member.tiktok}}" target="_blank"><span class="sr-only">TikTok</span><i class="fab fa-tiktok"></i></a>
+                            {% endif %}
 
                             {% if member.linkedin %}
                             <a href="{{member.linkedin}}" target="_blank"><span class="sr-only">LinkedIn</span><i class="fab fa-linkedin"></i></a>
