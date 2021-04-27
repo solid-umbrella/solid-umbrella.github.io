@@ -21,7 +21,7 @@
 title: solid-umbrella
 email: we-dont-have-an-email-right-now@solidumbrella.team
 description: >- # this means to ignore newlines until "baseurl:"
-  A high school CTF team mucking about, and also occasionally learning more stuff about how computers work (and how to hack them).
+  A cash money high school CTF team mucking about, and also occasionally learning more stuff about how computers work (and how to hack them).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 version: 2
